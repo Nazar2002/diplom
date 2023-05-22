@@ -1,0 +1,136 @@
+.ant-breadcrumb {
+  .ant-breadcrumb-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #242938;
+  }
+}
+
+.product {
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: #010101;
+    margin-top: 20px;
+  }
+
+  &__description {
+    display: grid;
+    grid-gap: 10px;
+
+    h4 {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 28px;
+      color: #010101;
+    }
+
+    div {
+      background-color: #F5F5F5;
+      padding: 10px;
+      border-radius: 10px;
+
+      p {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #010101;
+        opacity: 1;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        opacity: .7;
+      }
+    }
+  }
+
+  &__basket {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    background: #F5F5F5;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    p {
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #010101;
+      opacity: 1;
+    }
+  }
+}
+
+.product-info {
+  display: flex;
+  grid-gap: 20px;
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 500px;
+  }
+
+  &__main {
+    display: grid;
+    grid-gap: 20px;
+
+    div {
+      p {
+        opacity: 0.7;
+      }
+    }
+
+    hr {
+      background-color: gray;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #010101;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 28px;
+      color: #010101;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .product-info {
+    flex-direction: column;
+
+    img {
+      max-width: 400px;
+      max-height: 400px;
+      min-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    h1 {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.admin-page {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  color: #010101;
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 0;
+
+  >h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: #010101;
+    margin-top: 20px;
+  }
+
+  &-item {
+    display: block;
+    background-image: url("../../assets/icons/choose-by-game-banner_webp.webp");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .admin-page-content {
+    display: grid;
+
+    grid-gap: 30px;
+
+    margin-top: 20px;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 28px;
+      color: #010101;
+    }
+  }
+}
+
+.content-section {
+  display: grid;
+
+  grid-gap: 30px;
+}
+
+@media (max-width: 575px) {
+  .admin-page {
+    padding: 0;
+
+    >h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+  }
+
+  .ant-form .ant-form-item {
+    flex-direction: row !important;
+  }
+}

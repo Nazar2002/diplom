@@ -1,0 +1,27 @@
+.brand-modal {
+  .ant-modal-content .ant-modal-footer {
+    border-top: unset;
+
+    padding: 0;
+  }
+}
+
+.form-brand {
+  display: grid;
+
+  grid-gap: 20px;
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  .ant-form-item-label > label {
+    font-size: 16px;
+
+    line-height: 18px;
+
+    color: #242938;
+
+    padding-left: 0;
+  }
+}

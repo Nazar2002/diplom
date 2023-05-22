@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+
+  grid-gap: 10px;
+
+  button {
+    width: fit-content;
+  }
+}
+
+.footer-input {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.input {
+  height: 70px !important;
+}

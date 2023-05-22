@@ -1,0 +1,62 @@
+.basket-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  grid-gap: 30px;
+
+  img {
+    width: 150px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #010101;
+    opacity: 1;
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  .exit-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__info {
+    display: grid;
+    grid-gap: 10px;
+    width: 100%;
+
+    >div {
+      p {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .basket-item {
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .basket-item {
+    .exit-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+}

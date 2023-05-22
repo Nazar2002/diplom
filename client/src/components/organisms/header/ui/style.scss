@@ -1,0 +1,55 @@
+.header {
+  background-color: #FFFFFF !important;
+}
+
+.ant-layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .ant-menu-overflow {
+    justify-content: center;
+  }
+
+  >ul {
+    width: 100%;
+  }
+}
+
+.user-account {
+  position: absolute;
+  z-index: 3;
+  top: 50px;
+  right: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+
+  div {
+    display: grid;
+    justify-items: center;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    color: #010101;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .ant-layout-header {
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .user-account {
+    width: 100%;
+    max-width: 300px;
+    right: 20px;
+  }
+}
